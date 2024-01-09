@@ -12,14 +12,17 @@ public class MyBase extends Base{
 		this.state = state;
 	}
 
+	public void service(String state) {
+		setState(state);
+		super.service(state);
+	}
 	public void day() {
 		System.out.println("낮에는 열심히 수업듣자");
 	}
-
 	public void night() {
-		if(this.state.equals("밤")) {
+		if ("밤".equals(state)) {
 			System.out.println("밤에는 숙면");
-		}else {
+		} else {
 			System.out.println("오후에도 낮과 마찬가지로 공부해야 합니다.");
 		}
 	}
