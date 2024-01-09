@@ -17,7 +17,4 @@ public class SmartPhone extends MusicPhone {
     }
     
     //메소드작성
-    public void call(String str){
-    }
-   
 }
